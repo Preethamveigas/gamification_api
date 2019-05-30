@@ -1,0 +1,18 @@
+{
+  "name": "controlserver",
+  "version": "1.0.0",
+  "description": "this project checks the status and triggers needed service to run",
+  "main": "server.js",
+  "author": "preetham",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
