@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const fs = require("fs");
 
 const app = express();
 
@@ -50,13 +51,13 @@ app.get("/", (req, res) =>
   })
 );
 
-app.post("/enablelike", (req, res) =>
+app.get("/enablelike", (req, res) =>
   res.json({
     greet: "hello"
   })
 );
 
-app.post("/disablelike", (req, res) => {
+app.get("/disablelike", (req, res) => {
   setTimeout(() => {
     res.json({
       greet: "hello"
@@ -64,13 +65,13 @@ app.post("/disablelike", (req, res) => {
   }, 200);
 });
 
-app.post("/enableecomment", (req, res) =>
+app.get("/enableecomment", (req, res) =>
   res.json({
     greet: "hello"
   })
 );
 
-app.post("/disablecomment", (req, res) =>
+app.get("/disablecomment", (req, res) =>
   res.json({
     greet: "hello"
   })
